@@ -1,12 +1,20 @@
+import React, { useState } from "react";
 import "./App.css";
 import Square from "./components/Square";
 
 function App() {
-  const thisVariable = "oh yeah variable";
+  const [squares, setSquares] = useState("", "", "", "", "", "", "", "", "");
+  const [player, setPlayer] = useState(true);
 
   return (
     <div className="App">
-      <Square totes={thisVariable} />
+      <Square
+        player={player}
+        setPlayer={setPlayer}
+        squares={squares}
+        setSquares={setSquares}
+      />
+      ;
     </div>
   );
 }

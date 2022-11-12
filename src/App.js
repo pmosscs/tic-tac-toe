@@ -28,6 +28,9 @@ function App() {
         return `${array[a]} is the winner!`;
       }
     }
+    if (!squares.includes("")) {
+      return "Its a tie!";
+    }
     return "Who will win??";
   };
 
